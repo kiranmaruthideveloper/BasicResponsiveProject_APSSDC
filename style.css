@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+}
+body{
+    background: white;
+}
+.header{
+    background: rgb(238, 235, 235);
+    display: flex;
+    margin: 0.5%;
+    margin-top: 0;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+}
+.navbar a{
+    padding: 1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.logo{
+    display: flex;
+    margin-left: 4%;
+}
+.logo img{
+    width: 35%;
+
+}
+.main{
+    margin: 0.5%;
+    background: rgb(212, 212, 212);
+    display: flex;
+    align-items:stretch;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.content img{
+    width: 30%;
+    padding: 0%;
+    margin: 8%;
+    
+}
+.content img:hover{
+    box-shadow: 10px 10px 10px 10px;
+    transform: scale(1.6);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background: #000;
+    margin: 0.5%;
+    padding: 2%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footerNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footerNav a{
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 1%;
+}
+.aside{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+.aside video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.adress{
+    display: inline;
+    color: white;
+}
+
+@media only screen and (min-width:320px) and (max-width:960px) {
+
+    .main{
+        display: block;
+    }
+    .content img{
+        width: 100%;
+        margin: 0 0 10% 0;
+    }
+    .content{
+        display: block;
+        padding: 10%;
+    }
+    .content img:hover{
+        transform: scale(1.2);
+    }
+}
+@media only screen and (min-width:961px) and (max-width:1440px){
+    .main{
+        display: block;
+    }
+    .aside video{
+        height: 100%;
+        width: 100%;
+    }
+    .aside{
+        height: 600px;
+    }
+    .content img:hover{
+        transform: scale(1.0);
+    }
+    .content img{
+        width: 45%;
+        margin: 1%;
+    }
+}
